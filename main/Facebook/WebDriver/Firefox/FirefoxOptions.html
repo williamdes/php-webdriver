@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Facebook\WebDriver\Chrome\ChromeOptions | php-webdriver API</title>
+    <title>Facebook\WebDriver\Firefox\FirefoxOptions | php-webdriver API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -115,7 +115,7 @@
           title="php-webdriver API (main)" />
     </head>
 
-    <body id="class" data-name="class:Facebook_WebDriver_Chrome_ChromeOptions" data-root-path="../../../">
+    <body id="class" data-name="class:Facebook_WebDriver_Firefox_FirefoxOptions" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -187,19 +187,19 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Facebook.html">Facebook</a></li><li class="backslash">\</li><li><a href="../../../Facebook/WebDriver.html">WebDriver</a></li><li class="backslash">\</li><li><a href="../../../Facebook/WebDriver/Chrome.html">Chrome</a></li><li class="backslash">\</li><li>ChromeOptions</li>
+                        <li><a href="../../../Facebook.html">Facebook</a></li><li class="backslash">\</li><li><a href="../../../Facebook/WebDriver.html">WebDriver</a></li><li class="backslash">\</li><li><a href="../../../Facebook/WebDriver/Firefox.html">Firefox</a></li><li class="backslash">\</li><li>FirefoxOptions</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>ChromeOptions    
+        <h1>FirefoxOptions    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>ChromeOptions</strong>        implements
-        <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>        (<a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php">View source</a>)
+    <strong>FirefoxOptions</strong>        implements
+        <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>        (<a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php">View source</a>)
 </p>
 
         
@@ -207,7 +207,7 @@
         
 
             <div class="description">
-            <p><p>The class manages the capabilities in ChromeDriver.</p></p>                    </div>
+            <p><p>Class to manage Firefox-specific capabilities</p></p>                    </div>
             
         
             <h2>Constants</h2>    <table class="table table-condensed">
@@ -216,16 +216,25 @@
                                                                                                                         CAPABILITY
                                     </td>
                 <td class="last">
-                    <p><em><p>The key of chromeOptions in desired capabilities (in legacy OSS JsonWire protocol)</p></em></p>
+                    <p><em></em></p>
                     <p></p>
                 </td>
             </tr>
                     <tr>
                 <td>
-                                                                                                                        CAPABILITY_W3C
+                                                                                                                        OPTION_ARGS
                                     </td>
                 <td class="last">
-                    <p><em><p>The key of chromeOptions in desired capabilities (in W3C compatible protocol)</p></em></p>
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        OPTION_PREFS
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
                     <p></p>
                 </td>
             </tr>
@@ -238,85 +247,62 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+                    <a href="#method___construct">__construct</a>()
         
-                                            <p><p>Return a version of the class which can JSON serialized.</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
+                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setBinary">setBinary</a>(string $path)
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
         
-                                            <p><p>Sets the path of the Chrome executable. The path should be either absolute
-or relative to the location running ChromeDriver server.</p></p>                </div>
+                                            <p><p>Directly set firefoxOptions.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
+                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_addArguments">addArguments</a>(array $arguments)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Command line arguments to pass to the Firefox binary.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
+                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_addExtensions">addExtensions</a>(array $paths)
+                    <a href="#method_setPreference">setPreference</a>(string $name, string|bool|int $value)
         
-                                            <p><p>Add a Chrome extension to install on browser startup. Each path should be
-a packed Chrome extension.</p></p>                </div>
+                                            <p><p>Set Firefox preference (about:config entry).</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_addEncodedExtensions">addEncodedExtensions</a>(array $encoded_extensions)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_setExperimentalOption">setExperimentalOption</a>(string $name, mixed $value)
-        
-                                            <p><p>Sets an experimental option which has not exposed officially.</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../Facebook/WebDriver/Remote/DesiredCapabilities.html"><abbr title="Facebook\WebDriver\Remote\DesiredCapabilities">DesiredCapabilities</abbr></a>
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_toCapabilities">toCapabilities</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayObject">ArrayObject</a>|array
+                    array
                 </div>
                 <div class="col-md-8">
                     <a href="#method_toArray">toArray</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -329,85 +315,10 @@ a packed Chrome extension.</p></p>                </div>
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_jsonSerialize">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L46">at line 46</a></div>
-        <code>                    array
-    <strong>jsonSerialize</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Return a version of the class which can JSON serialized.</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setBinary">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L58">at line 58</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-    <strong>setBinary</strong>(string $path)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Sets the path of the Chrome executable. The path should be either absolute
-or relative to the location running ChromeDriver server.</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$path</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_addArguments">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L69">at line 69</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-    <strong>addArguments</strong>(array $arguments)
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L26">at line 26</a></div>
+        <code>                    
+    <strong>__construct</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -419,26 +330,7 @@ or relative to the location running ChromeDriver server.</p></p>
                     
         </div>
         <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$arguments</td>
-                <td></td>
-            </tr>
-            </table>
-
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -447,10 +339,10 @@ or relative to the location running ChromeDriver server.</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addExtensions">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L83">at line 83</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-    <strong>addExtensions</strong>(array $paths)
+                    <h3 id="method_setOption">
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L43">at line 43</a></div>
+        <code>                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
+    <strong>setOption</strong>(string $name, mixed $value)
         </code>
     </h3>
     <div class="details">    
@@ -458,93 +350,7 @@ or relative to the location running ChromeDriver server.</p></p>
             
 
         <div class="method-description">
-                            <p><p>Add a Chrome extension to install on browser startup. Each path should be
-a packed Chrome extension.</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$paths</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_addEncodedExtensions">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L96">at line 96</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-    <strong>addEncodedExtensions</strong>(array $encoded_extensions)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$encoded_extensions</td>
-                <td><p>An array of base64 encoded of the extensions.</p></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setExperimentalOption">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L112">at line 112</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a>
-    <strong>setExperimentalOption</strong>(string $name, mixed $value)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Sets an experimental option which has not exposed officially.</p></p>                        
+                            <p><p>Directly set firefoxOptions.</p></p>                <p><p>Use <code>addArguments</code> to add command line arguments and <code>setPreference</code> to set Firefox about:config entry.</p></p>        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -567,7 +373,7 @@ a packed Chrome extension.</p></p>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Facebook/WebDriver/Chrome/ChromeOptions.html"><abbr title="Facebook\WebDriver\Chrome\ChromeOptions">ChromeOptions</abbr></a></td>
+            <td><a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -580,10 +386,10 @@ a packed Chrome extension.</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_toCapabilities">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L122">at line 122</a></div>
-        <code>                    <a href="../../../Facebook/WebDriver/Remote/DesiredCapabilities.html"><abbr title="Facebook\WebDriver\Remote\DesiredCapabilities">DesiredCapabilities</abbr></a>
-    <strong>toCapabilities</strong>()
+                    <h3 id="method_addArguments">
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L65">at line 65</a></div>
+        <code>                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
+    <strong>addArguments</strong>(array $arguments)
         </code>
     </h3>
     <div class="details">    
@@ -591,22 +397,106 @@ a packed Chrome extension.</p></p>
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Command line arguments to pass to the Firefox binary.</p></p>                <p><p>These must include the leading dash (-) where required, e.g. ['-headless'].</p></p>        
         </div>
         <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../Facebook/WebDriver/Remote/DesiredCapabilities.html"><abbr title="Facebook\WebDriver\Remote\DesiredCapabilities">DesiredCapabilities</abbr></a></td>
-            <td><p>The DesiredCapabilities for Chrome with this options.</p></td>
+            <td><a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a></td>
+            <td></td>
         </tr>
     </table>
 
             
             
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions#args">https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions#args</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPreference">
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L81">at line 81</a></div>
+        <code>                    <a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a>
+    <strong>setPreference</strong>(string $name, string|bool|int $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Firefox preference (about:config entry).</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|bool|int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Facebook/WebDriver/Firefox/FirefoxOptions.html"><abbr title="Facebook\WebDriver\Firefox\FirefoxOptions">FirefoxOptions</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="http://kb.mozillazine.org/About:config_entries">http://kb.mozillazine.org/About:config_entries</a>
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions#prefs">https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions#prefs</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -614,8 +504,8 @@ a packed Chrome extension.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Chrome/ChromeOptions.php#L133">at line 133</a></div>
-        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayObject">ArrayObject</a>|array
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L91">at line 91</a></div>
+        <code>                    array
     <strong>toArray</strong>()
         </code>
     </h3>
@@ -633,11 +523,35 @@ a packed Chrome extension.</p></p>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a target="_blank" rel="noopener" href="https://www.php.net/ArrayObject">ArrayObject</a>|array</td>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location"><a href="https://github.com/php-webdriver/php-webdriver/blob/main/lib/Firefox/FirefoxOptions.php#L104">at line 104</a></div>
+        <code>                    
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
             
             
             
